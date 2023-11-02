@@ -37,3 +37,6 @@ const stu = new Student();
 stu.setName("kamal")
 console.log(stu.getName());
 
+
+
+
