@@ -79,3 +79,29 @@ const propertyName = 'id'; //store a property name
 
 console.log(item[propertyName]); // and using a property name
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//delete a property
+
+function Layer(floor){
+    this.floor = floor;
+}
+
+const layer = new Layer();
+
+delete layer.floor; // delete a property
+
+layer.flor = 12; // adding a property always doing to add property with this property values !
+
+console.log(layer);
+
+for (const layerKey in layer) {
+    console.log(layerKey); //eneumaring a object
+}
+
+const keyArray = Object.keys(layer); //get key array in object
+
+for (let i = 0; i < keyArray.length; i++) {
+    console.log(keyArray[i]);
+}
+
