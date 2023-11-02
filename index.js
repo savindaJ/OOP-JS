@@ -52,3 +52,30 @@ customer.printDetail(); // calling object function
 console.log(Customer.name); //obj name
 console.log(Customer.length); //obj property's
 console.log(Customer.constructor);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//adding a property
+
+function Item(qty,price){
+    this.qty = qty;
+    this.price = price;
+}
+
+const item = new Item(11,120);
+
+item.id = "I001"; // adding property i run time ! using dot notation
+
+item['description'] = "Lux"; // adding property i run time ! using bracket notation
+
+console.log(item);
+
+console.log(item.id);
+console.log(item.qty);
+console.log(item.price);
+console.log(item.description); //accessing a property
+
+const propertyName = 'id'; //store a property name
+
+console.log(item[propertyName]); // and using a property name
+
