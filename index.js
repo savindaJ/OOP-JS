@@ -26,5 +26,20 @@ function createPerson(name,address){
         }
     }
 }
-const obj = createPerson("kamal","Galle");
-obj.printDetail();
+const obj = createPerson("kamal","Galle"); //create obj
+obj.printDetail(); //calling object function!
+
+//constructor function !
+
+function Customer(name,address){
+    this.name = name;
+    this.address = address;
+
+    this.printDetail = function (){
+        console.log(name,address);
+    }
+}
+
+const customer = new Customer("savinda","Matara"); //create object
+
+customer.printDetail(); // calling object functin
