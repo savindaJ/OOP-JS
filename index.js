@@ -15,6 +15,8 @@ const person = {
 
 person.eat();
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 // factorial object !
 function createPerson(name,address){
@@ -29,17 +31,24 @@ function createPerson(name,address){
 const obj = createPerson("kamal","Galle"); //create obj
 obj.printDetail(); //calling object function!
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //constructor function !
 
 function Customer(name,address){
     this.name = name;
     this.address = address;
-
     this.printDetail = function (){
         console.log(name,address);
     }
+
+    console.log(this);
 }
 
 const customer = new Customer("savinda","Matara"); //create object
 
-customer.printDetail(); // calling object functin
+customer.printDetail(); // calling object function
+
+console.log(Customer.name); //obj name
+console.log(Customer.length); //obj property's
+console.log(Customer.constructor);
