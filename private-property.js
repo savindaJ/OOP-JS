@@ -38,5 +38,23 @@ stu.setName("kamal")
 console.log(stu.getName());
 
 
+class Phone{
+    #brand
+    #name
+    constructor(name,brand) {
+        this.#name = name;
+        this.#brand = brand;
+    }
+
+    setName(name){
+        this.#name = name;
+    }
+
+    getName(){
+        return this.#name;
+    }
+
+}
+
 
 
