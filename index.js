@@ -14,3 +14,17 @@ const person = {
 };
 
 person.eat();
+
+
+// factorial object !
+function createPerson(name,address){
+    return{
+        name:name,
+        address:address,
+        printDetail:function (){
+            console.log(name,address);
+        }
+    }
+}
+const obj = createPerson("kamal","Galle");
+obj.printDetail();
